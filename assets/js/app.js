@@ -1,25 +1,23 @@
-/*function over(){
-     document.getElementById("initial").value="You have hovered mouse over me";
- }*/
 
-function firstbtn(){
+function first_container(){
 	var boxes=document.getElementById('boxes');//llamo al div en html que contiene los elementos
 	var second_btn= document.createElement('button');//creo botón
 	var input=document.createElement('input');//creo input
 	var nodoText=document.createTextNode('Guardar');//creo texto que irá en el botón
 //atributos
-input.setAttribute('id', 'valor');//doy atributos a input()
+input.setAttribute('id', 'inpt');//doy atributos a input()
 //nodos
 second_btn.appendChild(nodoText);//indico parentesco de nodo texto
 boxes.appendChild(second_btn);//indico second_btn es hijo de boxes
 boxes.appendChild(input);//input también es hijo de boxes
 
 second_btn.addEventListener('click', function(){//guardar lo escrito en input al activar evento click
-	var text=document.getElementById('second_btn').value;// lo que ingresaré en input
-	document.getElementById('valor').value="";//limpiame ese lugar para colocar el valor
+	var text=document.getElementById('second_btn');// lo que ingresaré en input
+	document.getElementById('inpt').value="";//limpiame ese lugar para colocar el valor
 	var works= document.getElementById('works');//será el padre de textNew
 	var paragraph=document.createElement('p');//creo un parrafo(indico tipo de elemento texto)
-	var textNew=document.createTextNode(text);//será el valor de input
+	var textNew=document.createTextNode(' ');//será el valor de input
+	
 	var add= document.createElement('a');// nuevo elemento al hacer click generará un nuevo textarea
 	add.setAttribute('href', '#');//doy a tributos a anchord
 	var textAdd= document.createTextNode("añadir tarjeta");
