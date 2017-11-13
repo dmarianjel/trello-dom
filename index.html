@@ -8,6 +8,7 @@
 </head>
 <body>
 	<header>
+		<!--barra de navegación-->
 		<nav>
 			<div id="tab-icon">
 				<i class="fa fa-trello" aria-hidden="true"></i>
@@ -20,22 +21,23 @@
 				<img src="assets/img/trello-logo.png" alt="">
 			</div> 
 			<div id="menu">
-				<ul>
-					<li class="bell"><a href="#"></a>
-						<i class="fa fa-bell-o" aria-hidden="true"></i></li>
-					<li class="info"><a href="#"></a>
-						<i class="fa fa-info-circle" aria-hidden="true"></i>
-					</li>
-					<li class="plus"><a href="#"></a>
-						<i class="fa fa-plus" aria-hidden="true"></i>
-					</li>
-				</ul>
+				<div class="bell">
+					<i class="fa fa-bell-o" aria-hidden="true"></i>
+				</div>		
+				<div class="info">
+					<i class="fa fa-info-circle" aria-hidden="true"></i>
+				</div>
+				<div class="plus">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+				</div>
 			</div>
 		</nav>
 	</header>
-	<section class="container-tab">
+	<section class="container_tab">
 		<div id="boxes">
-			<button id="initial" class="btn-initial">Añadir una lista</button>
+			<button id="initial" onclick="firstbtn()">Añadir una lista</button>
+			<!--<button onmouseover="over()" id="initial" onclick="firstbtn()">Añadir una lista</button>-->
+			<!--onclick="box_1()"-->
 		</div>
 		<div id="works"></div>	
 			<!--código de js-->

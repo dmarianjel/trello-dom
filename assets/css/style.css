@@ -6,13 +6,13 @@ body{
 nav{
 	background: #006ca2;
 	clear: both;
-	align-items: center;
+	vertical-align: center;
 	overflow: hidden;
 }
 /*font-family: 'Roboto', sans-serif;*/
 #tab-icon{
 	display: inline-block;
-	align-items: center;
+	vertical-align: center;
 	background: #4ec0f4;
 	margin: 6px;
 }
@@ -55,15 +55,19 @@ nav{
 	width: 80px;
 	height: 20px;
 }
-#menu, ul{
+#menu{
 	display: inline-block;
+	vertical-align: center;
 }
-#menu, ul li{
-	list-style-type: none;
-	float: right;
-	color: #fff;
+.bell, .info, .plus{
+	display: inline-block;
+	width:20px;
+	height: 20px;
+	background: #4ec0f4;
 	padding: 6px;
-	/*border-radius: 10%;
-	background: #4ec0f4;*/
+	border-radius: 50%;	
 }
-
+#menu, i{
+	color: #fff;
+	text-align: center;
+}
